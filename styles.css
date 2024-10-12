@@ -1,6 +1,18 @@
-*{
-    max-width:100%;
-    box-sizing: border-box;
+:root {
+    --color-debut: #50a7e0;
+    --color-fearless: #D9A648;
+    --color-speak_now: #622773;
+    --color-red: #73030D;
+    --color-1989: #b0a19d;
+    --color-reputation: #676767;
+    --color-lover:#F2CED1;
+    --color-folklore: #bababa;
+    --color-evermore: #67230e;
+    --color-midnights: midnightblue;
+    --color-ttpd: #844247;
+    --color-header-footer:#F2EDE4;
+    --color-bg:#FFFBF5;
+    --color-nav:#F2DAAC;
 }
 main{
     font-family: sans-serif;
@@ -9,13 +21,18 @@ main{
     width:100%;
 }
 header{
-    color:tan;
+    background-color: var(--color-header-footer);
     font-size: 40px;
     text-align: center;
     display: flex;
     align-items: center; /* Vertically centers the icon and text */
     justify-content: center; /* Horizontally centers the content */
     gap: 10px; /* Adds space between the icon and text */
+}
+footer{
+    background-color: var(--color-header-footer);
+    color: var(--color-bg);
+    font-size: 20px;
 }
 .icon{
     width: 100px;
@@ -27,7 +44,6 @@ header{
 }
 .list li {
     display:inline;
-    background-color:#ECECEC;
     padding: 3px;
 }
 footer {
@@ -57,10 +73,6 @@ p{
     .list li{
         text-align:left;
     }
-    body{
-        background-image:none;
-        background-color:#844247;
-    }
 }
 table{
     width:100%;
@@ -68,4 +80,29 @@ table{
 }
 td{
     padding:10px;
+}
+nav {
+    width: 100%;
+    background-color: var(--color-nav);
+}
+
+.list {
+    display: flex;
+    justify-content: space-between; /* Distributes the items with equal spacing */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    flex: 1; /* Ensures each item takes up equal width */
+    text-align: center;
+    padding: 3px;
+}
+
+.list li a {
+    display: block;
+    padding: 10px;
+    color: var(--color-link-text);
+    text-decoration: none;
 }
