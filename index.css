@@ -1,0 +1,109 @@
+/*index.css*/
+#album_buttons input {
+    display: block;
+    margin-bottom: 10px;
+    width:100px;
+}
+#game_table tr td {
+    width:30%;
+}
+#game_table {
+    width: 100%;
+    table-layout: fixed;
+}
+#game_table td {
+    width: 33.33%; /* Ensures equal width for each column */
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+}
+#album_buttons input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Individual album button colors */
+#album_buttons input[value="Debut"] {
+    background-color: var(--color-debut);
+}
+#album_buttons input[value="Fearless"] {
+    background-color: var(--color-fearless);
+}
+#album_buttons input[value="Speak Now"] {
+    background-color: var(--color-speak_now);
+}
+#album_buttons input[value="Red"] {
+    background-color: var(--color-red);
+}
+#album_buttons input[value="1989"] {
+    background-color: var(--color-1989);
+}
+#album_buttons input[value="Reputation"] {
+    background-color: var(--color-reputation);
+}
+#album_buttons input[value="Lover"] {
+    background-color: var(--color-lover);
+    color: black;
+}
+#album_buttons input[value="Folklore"] {
+    background-color: var(--color-folklore);
+    color: black;
+}
+#album_buttons input[value="Evermore"] {
+    background-color: var(--color-evermore);
+}
+#album_buttons input[value="Midnights"] {
+    background-color: var(--color-midnights);
+}
+#album_buttons input[value="The Tourtered Poets Department"] {
+    background-color: var(--color-ttpd);
+}
+
+/* Hover effect for all buttons */
+#album_buttons input:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+/* Active state when clicking the button */
+#album_buttons input:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}
+
+/* Style for the Start button */
+.start-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Hover effect for Start button */
+.start-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active effect for Start button */
+.start-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
