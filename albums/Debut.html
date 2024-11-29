@@ -1,3 +1,4 @@
+<!--Debut.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,27 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Debut</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #619C42;
+    }
+    nav{
+        background-color:#06BFBF;
+    }
+    body{
+        background-color:#FFFAFC;
+    }
+    #album_slideshow{
+        border: #619C42 4px solid;
+    }
+    h2{
+        color:#619C42;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Debut</header>
     <nav>
@@ -38,10 +48,44 @@
         </ul>
     </nav>
     <main>
-        
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/debut/img0.jpg" alt="Debut Slideshow" id="album_slideshow" width="500">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Debut</em> Album</h2>
+            <ul class="song-list">
+                <li>Tim McGraw</li>
+                <li>Picture to Burn</li>
+                <li>Teardrops On My Guitar</li>
+                <li>A Place In This World</li>
+                <li>Cold As You</li>
+                <li>The Outside</li>
+                <li>Tied Together With a Smile</li>
+                <li>Stay Beautiful</li>
+                <li>Should've Said No</li>
+                <li>Mary's Song (Oh My My My)</li>
+                <li>Our Song</li>
+                <li>I'm Only Me When I'm With You</li>
+                <li>Invisible</li>
+                <li>A Perfectly Good Heart</li>
+            </ul>
+        </div>
     </main>
     <footer>
         &#169; 2024 <a href="Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('debut');
+    </script>
 </body>
 </html>

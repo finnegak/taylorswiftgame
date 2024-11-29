@@ -1,3 +1,4 @@
+<!--Lover.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,33 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Lover</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #FDECF5;
+    }
+    nav{
+        background-color:#FFC0E3;
+    }
+    body{
+        background-color:#FFFAFC;
+    }
+    #album_slideshow{
+        border: #FFC0E3 4px solid;
+    }
+    h2{
+        color:#FFC0E3;
+    }
+    footer{
+        color:#FFC0E3;
+    }
+    footer a{
+        color:deeppink;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Lover</header>
     <nav>
@@ -38,10 +54,48 @@
         </ul>
     </nav>
     <main>
-        
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/lover/img0.jpg" alt="Lover Slideshow" id="album_slideshow" width="500">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Lover</em> Album</h2>
+            <ul class="song-list">
+                <li>I Forgot That You Existed</li>
+                <li>Cruel Summer</li>
+                <li>Lover</li>
+                <li>The Man</li>
+                <li>The Archer</li>
+                <li>I Think He Knows</li>
+                <li>Miss Americana & The Heartbreak Prince</li>
+                <li>Paper Rings</li>
+                <li>Cornelia Street</li>
+                <li>Death by a Thousand Cuts</li>
+                <li>London Boy</li>
+                <li>Soon You'll Get Better (feat. Dixie Chicks)</li>
+                <li>False God</li>
+                <li>You Need to Calm Down</li>
+                <li>Afterglow</li>
+                <li>ME! (feat. Brendon Urie)</li>
+                <li>It's Nice to Have a Friend</li>
+                <li>Daylight</li>
+            </ul>
+        </div>
     </main>
     <footer>
         &#169; 2024 <a href="Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('lover');
+    </script>
 </body>
 </html>

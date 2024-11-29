@@ -80,7 +80,6 @@ nav {
 
 .list a:hover {
     color: white; /* Change text color on hover */
-    background-color: var(--color-nav); /* Change background color */
     border-radius: 5px; /* Adds a subtle roundness to the corners */
     transform: scale(1.1); /* Slightly enlarges the link */
 }
