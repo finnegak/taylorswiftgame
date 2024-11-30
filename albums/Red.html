@@ -1,3 +1,4 @@
+<!--Red.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,33 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Red</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #96786D;
+    }
+    nav{
+        background-color:#731702;
+    }
+    body{
+        background-color:#FFFAFC;
+    }
+    #album_slideshow{
+        border: #4C1E59 4px solid;
+    }
+    h2{
+        color:#731702;
+    }
+    footer{
+        color:#96786D;
+    }
+    footer a{
+        color:#731702;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Red</header>
     <nav>
@@ -38,10 +54,62 @@
         </ul>
     </nav>
     <main>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Red</em> Album</h2>
+            <ul class="song-list">
+                <li>State of Grace (Taylor's Version)</li>
+                <li>Red (Taylor's Version)</li>
+                <li>Treacherous (Taylor's Version)</li>
+                <li>I Knew You Were Trouble (Taylor's Version)</li>
+                <li>All Too Well (Taylor's Version)</li>
+                <li>22 (Taylor's Version)</li>
+                <li>I Almost Do (Taylor's Version)</li>
+                <li>We Are Never Ever Getting Back Together (Taylor's Version)</li>
+                <li>Stay Stay Stay (Taylor's Version)</li>
+                <li>The Last Time (Taylor's Version)</li>
+                <li>Holy Ground (Taylor's Version)</li>
+                <li>Sad Beautiful Tragic (Taylor's Version)</li>
+                <li>The Lucky One (Taylor's Version)</li>
+                <li>Everything Has Changed (Taylor's Version) [feat. Ed Sheeran]</li>
+                <li>Starlight (Taylor's Version)</li>
+                <li>Begin Again (Taylor's Version)</li>
+                <li>The Moment I Knew (Taylor's Version)</li>
+                <li>Come Back... Be Here (Taylor's Version)</li>
+                <li>Girl At Home (Taylor's Version)</li>
+                <li>State of Grace (Acoustic Version) (Taylor's Version)</li>
+                <li>Ronan (Taylor's Version)</li>
+                <li>Better Man (Taylor's Version) [From The Vault]</li>
+                <li>Nothing New (Taylor's Version) [From The Vault] [feat. Phoebe Bridgers]</li>
+                <li>Babe (Taylor's Version) [From The Vault]</li>
+                <li>Message In A Bottle (Taylor's Version) [From The Vault]</li>
+                <li>I Bet You Think About Me (Taylor's Version) [From The Vault] [feat. Chris Stapleton]</li>
+                <li>Forever Winter (Taylor's Version) [From The Vault]</li>
+                <li>Run (Taylor's Version) [From The Vault] [feat. Ed Sheeran]</li>
+                <li>The Very First Night (Taylor's Version) [From The Vault]</li>
+                <li>All Too Well (10 Minute Version) (Taylor's Version) [From The Vault]</li>
+            </ul>
+        </div>
         
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/red/img0.jpg" alt="Lover Slideshow" id="album_slideshow" width="500">
+        </div>
+
     </main>
     <footer>
-        &#169; 2024 <a href="Contact.html">Contact Us</a>
+        &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('red');
+    </script>
 </body>
 </html>

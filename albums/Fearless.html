@@ -1,3 +1,4 @@
+<!--Fearless.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,33 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Fearless</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #F2E4BB;
+    }
+    nav{
+        background-color:#A67A46;
+    }
+    body{
+        background-color:#FFFAFC;
+    }
+    #album_slideshow{
+        border: #A67A46 4px solid;
+    }
+    h2{
+        color:#A67A46;
+    }
+    footer{
+        color:#A67A46;
+    }
+    footer a{
+        color:#A67A46;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Fearless</header>
     <nav>
@@ -38,10 +54,57 @@
         </ul>
     </nav>
     <main>
-        
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Fearless</em> Album</h2>
+            <ul class="song-list">
+                <li>Fearless (Taylor's Version)</li>
+                <li>Fifteen (Taylor's Version)</li>
+                <li>Love Story (Taylor's Version)</li>
+                <li>Hey Stephen (Taylor's Version)</li>
+                <li>White Horse (Taylor's Version)</li>
+                <li>You Belong With Me (Taylor's Version)</li>
+                <li>Breathe (Taylor's Version) [feat. Colbie Caillat]</li>
+                <li>Tell Me Why (Taylor's Version)</li>
+                <li>You're Not Sorry (Taylor's Version)</li>
+                <li>The Way I Loved You (Taylor's Version)</li>
+                <li>Forevery & Always (Taylor's Version)</li>
+                <li>The Best Day (Taylor's Version)</li>
+                <li>Change (Taylor's Version)</li>
+                <li>Jump Then Fall (Taylor's Version)</li>
+                <li>Untouchable (Taylor's Version)</li>
+                <li>Come In With The Rain (Taylor's Version)</li>
+                <li>Superstar (Taylor's Version)</li>
+                <li>The Other Side Of The Door (Taylor's Version)</li>
+                <li>Today Was A Fairytale (Taylor's Version)</li>
+                <li>You All Over Me (Taylor's Version) (From The Vault) [feat. Maren Morris]</li>
+                <li>Mr. Perfectly Fine (Taylor's Version) (From The Vault)</li>
+                <li>We Were Happy (Taylor's Version) (From The Vault)</li>
+                <li>That's When (Taylor's Version) (From The Vault) [feat. Keith Urban]</li>
+                <li>Don't You (Taylor's Version) (From The Vault)</li>
+                <li>Bye Bye Baby (Taylor's Version) (From The Vault)</li>
+            </ul>
+        </div>
+
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/fearless/img0.jpg" alt="Lover Slideshow" id="album_slideshow" width="500">
+        </div>
+
     </main>
     <footer>
-        &#169; 2024 <a href="Contact.html">Contact Us</a>
+        &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('fearless');
+    </script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<!--SpeakNow.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,33 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Speak Now</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #8B4A8A;
+    }
+    nav{
+        background-color:#4C1E59;
+    }
+    body{
+        background-color:#FFFAFC;
+    }
+    #album_slideshow{
+        border: #4C1E59 4px solid;
+    }
+    h2{
+        color:#4C1E59;
+    }
+    footer{
+        color:#8B4A8A;
+    }
+    footer a{
+        color:#4C1E59;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Speak Now</header>
     <nav>
@@ -38,10 +54,54 @@
         </ul>
     </nav>
     <main>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Speak Now</em> Album</h2>
+            <ul class="song-list">
+                <li>Mine (Taylor's Version)</li>
+                <li>Sparks Fly (Taylor's Version)</li>
+                <li>Back to December (Taylor's Version)</li>
+                <li>Speak Now (Taylor's Version)</li>
+                <li>Dear John (Taylor's Version)</li>
+                <li>Mean (Taylor's Version)</li>
+                <li>The Story of Us (Taylor's Version)</li>
+                <li>Never Grow Up (Taylor's Version)</li>
+                <li>Enchanted (Taylor's Version)</li>
+                <li>Better Than Revenge (Taylor's Version)</li>
+                <li>Innocent (Taylor's Version)</li>
+                <li>Haunted (Taylor's Version)</li>
+                <li>Last Kiss (Taylor's Version)</li>
+                <li>Long Live (Taylor's Version)</li>
+                <li>Ours (Taylor's Version)</li>
+                <li>Superman (Taylor's Version)</li>
+                <li>Electric Touch (Taylor's Version) (From the Vault) [feat. Fall Out Boy]</li>
+                <li>When Emma Falls In Love (Taylor's Version) (From the Vault)</li>
+                <li>I Can See You (Taylor's Version) (From the Vault)</li>
+                <li>Castles Crumbling (Taylor's Version) (From the Vault)</li>
+                <li>Foolish One (Taylor's Version) (From the Vault)</li>
+                <li>Timeless (Taylor's Version) (From the Vault)</li>
+            </ul>
+        </div>
         
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/speaknow/img0.jpg" alt="Lover Slideshow" id="album_slideshow" width="500">
+        </div>
+
     </main>
     <footer>
-        &#169; 2024 <a href="Contact.html">Contact Us</a>
+        &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('SpeakNow');
+    </script>
 </body>
 </html>
