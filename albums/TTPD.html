@@ -1,3 +1,4 @@
+<!--TTPD.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,28 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>The Tourtered Poets Department</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer, footer a{
+        background-color: #403631;
+        color: white;
+    }
+    nav{
+        background-color:#BFB8B0;
+    }
+    body{
+        background-color:#F2F1F0;
+    }
+    #album_slideshow{
+        border: #403631 4px solid;
+    }
+    h2{
+        color:#403631;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">The Tourtered Poets Department</header>
     <nav>
@@ -38,10 +49,61 @@
         </ul>
     </nav>
     <main>
-        
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/TTPD/img0.jpg" alt="TTPD Slideshow" id="album_slideshow" width="500">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>TTPD</em> Album</h2>
+            <ul class="song-list">
+                <li>Fortnight (feat. Post Malone)</li>
+                <li>The Tortured Poets Department</li>
+                <li>My Boy Only Breaks His Favorite Toys</li>
+                <li>Down Bad</li>
+                <li>So Long, London</li>
+                <li>But Daddy I Love Him</li>
+                <li>Fresh Out The Slammer</li>
+                <li>Florida!!! (feat. Florence + the Machine)</li>
+                <li>Guilty as Sin?</li>
+                <li>Who's Afraid of Little Old Me?</li>
+                <li>I Can Fix Him (No Really I Can)</li>
+                <li>loml</li>
+                <li>I can Do It With a Broken Heart</li>
+                <li>The Smallest Man Who Ever Lived</li>
+                <li>The Alchemy</li>
+                <li>Clara Bow</li>
+                <li>The Black Dog</li>
+                <li>imgonnagetyouback</li>
+                <li>The Albatross</li>
+                <li>Chloe or Sam or Sophia or Marcus</li>
+                <li>How Did It End?</li>
+                <li>So High School</li>
+                <li>I Hate It Here</li>
+                <li>thanK you aIMee</li>
+                <li>I Look in People's Windows</li>
+                <li>The Prophecy</li>
+                <li>Cassandra</li>
+                <li>Peter</li>
+                <li>The Bolter</li>
+                <li>Robin</li>
+                <li>The Manuscript</li>
+            </ul>
+        </div>
     </main>
     <footer>
         &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('TTPD');
+    </script>
 </body>
 </html>

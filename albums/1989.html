@@ -1,3 +1,4 @@
+<!--1989.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,33 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>1989</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #A7B6BD;
+    }
+    nav{
+        background-color:#75A3BF;
+    }
+    body{
+        background-color:#D9D4CC;
+    }
+    #album_slideshow{
+        border: #75A3BF 4px solid;
+    }
+    h2{
+        color:#75A3BF;
+    }
+    footer{
+        color:#A7B6BD;
+    }
+    footer a{
+        color:#75A3BF;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">1989</header>
     <nav>
@@ -38,10 +54,53 @@
         </ul>
     </nav>
     <main>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>1989</em> Album</h2>
+            <ul class="song-list">
+                <li>Welcome to New York (Taylor's Version)</li>
+                <li>Blank Space (Taylor's Version)</li>
+                <li>Style (Taylor's Version)</li>
+                <li>Out Of The Woods (Taylor's Version)</li>
+                <li>All You Had To Do Was Stay (Taylor's Version)</li>
+                <li>Shake It Off (Taylor's Version)</li>
+                <li>I Wish You Would (Taylor's Version)</li>
+                <li>Bad Blood (Taylor's Version)</li>
+                <li>Wildest Dream (Taylor's Version)</li>
+                <li>How You Get The Girl (Taylor's Version)</li>
+                <li>This Love (Taylor's Version)</li>
+                <li>I Know Places (Taylor's Version)</li>
+                <li>Clean (Taylor's Version)</li>
+                <li>Wonderland (Taylor's Version) [feat. Ed Sheeran]</li>
+                <li>You Are In Love (Taylor's Version)</li>
+                <li>New Romantics (Taylor's Version)</li>
+                <li>"Slut!" (Taylor's Version) [From The Vault]</li>
+                <li>Say Don't Go (Taylor's Version) [From The Vault]</li>
+                <li>Now That We Don't Talk (Taylor's Version) [From The Vault]</li>
+                <li>Suburban Legends (Acoustic Version) (Taylor's Version) [From The Vault]</li>
+                <li>Is It Over Now? (Taylor's Version) [From The Vault]</li>
+            </ul>
+        </div>
         
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/1989/img0.jpg" alt="Lover Slideshow" id="album_slideshow" width="500">
+        </div>
+
     </main>
     <footer>
-        &#169; 2024 <a href="Contact.html">Contact Us</a>
+        &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('1989');
+    </script>
 </body>
 </html>

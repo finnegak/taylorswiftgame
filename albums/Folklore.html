@@ -1,3 +1,4 @@
+<!--Folklore.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,27 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Folklore</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #8C8C8C;
+    }
+    nav{
+        background-color:#BFBFBF;
+    }
+    body{
+        background-color:#F2F2F2;
+    }
+    #album_slideshow{
+        border: #8C8C8C 4px solid;
+    }
+    h2{
+        color:#8C8C8C;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Folklore</header>
     <nav>
@@ -38,10 +48,47 @@
         </ul>
     </nav>
     <main>
-        
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/folklore/img0.jpg" alt="Folklore Slideshow" id="album_slideshow" width="500">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Folklore</em> Album</h2>
+            <ul class="song-list">
+                <li>the 1</li>
+                <li>cardigan</li>
+                <li>the last great american dynasty</li>
+                <li>exile (feat. Bon Iver)</li>
+                <li>my tears ricochet</li>
+                <li>mirrorball</li>
+                <li>seven</li>
+                <li>august</li>
+                <li>this is me trying</li>
+                <li>illicit affairs</li>
+                <li>invisible string</li>
+                <li>mad woman</li>
+                <li>epiphany</li>
+                <li>betty</li>
+                <li>peace</li>
+                <li>hoax</li>
+                <li>the lakes</li>
+            </ul>
+        </div>
     </main>
     <footer>
-        &#169; 2024 <a href="Contact.html">Contact Us</a>
+        &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('folklore');
+    </script>
 </body>
 </html>

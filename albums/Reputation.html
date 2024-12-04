@@ -1,3 +1,4 @@
+<!--Reputation.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,31 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Reputation</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer{
+        background-color: #0D0D0D;
+        color:white;
+    }
+    footer a{
+        color:white;
+    }
+    nav{
+        background-color:#BFBFBF;
+    }
+    body{
+        background-color:#F2F2F2;
+    }
+    #album_slideshow{
+        border: #0D0D0D 4px solid;
+    }
+    h2{
+        color:#0D0D0D;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Reputation</header>
     <nav>
@@ -38,10 +52,45 @@
         </ul>
     </nav>
     <main>
-        
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/reputation/img0.jpg" alt="Reputation Slideshow" id="album_slideshow" width="500">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Reputation</em> Album</h2>
+            <ul class="song-list">
+                <li>...Ready For It?</li>
+                <li>End Game (feat. Ed Sheeran & Future)</li>
+                <li>I Did Something Bad</li>
+                <li>Don't Blame Me</li>
+                <li>Delicate</li>
+                <li>Look What You Made Me Do</li>
+                <li>So It Goes...</li>
+                <li>Gorgeous</li>
+                <li>Getaway Car</li>
+                <li>King of My Heart</li>
+                <li>Dancing With Our Hands Tied</li>
+                <li>Dress</li>
+                <li>This Is Why We Can't Have Nice Things</li>
+                <li>Call It What You Want</li>
+                <li>New Year's Day</li>
+            </ul>
+        </div>
     </main>
     <footer>
         &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('reputation');
+    </script>
 </body>
 </html>

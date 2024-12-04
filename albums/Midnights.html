@@ -1,3 +1,4 @@
+<!--Midnights.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,28 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Kelly Finnegan">
-    <title>About Taylor Swift</title>
+    <title>Midnights</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../album.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6C1WY19YE');
-</script>
+<style>
+    header,footer,footer a{
+        background-color: #5C6485;
+        color:white;
+    }
+    nav{
+        background-color:#8DA0A7;
+    }
+    body{
+        background-color:#F2F2F0;
+    }
+    #album_slideshow{
+        border: #5C6485 4px solid;
+    }
+    h2{
+        color:#5C6485;
+    }
+</style>
 <body>
     <header><img class = "icon" src="../thumbnails/thumbnail_main.png" alt="Taylor headshot">Midnights</header>
     <nav>
@@ -38,10 +49,51 @@
         </ul>
     </nav>
     <main>
-        
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="../slideshow/midnights/img0.jpg" alt="Midnights Slideshow" id="album_slideshow" width="500">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Songs from the <em>Midnights</em> Album</h2>
+            <ul class="song-list">
+                <li>Lavender Haze</li>
+                <li>Maroon</li>
+                <li>Anti-Hero</li>
+                <li>Snow On The Beach (feat. Lana Del Rey)</li>
+                <li>You're On Your Own, Kid</li>
+                <li>Midnight Rain</li>
+                <li>Question...?</li>
+                <li>Vigilante Shit</li>
+                <li>Bejeweled</li>
+                <li>Labyrinth</li>
+                <li>Karma</li>
+                <li>Sweet Nothing</li>
+                <li>Mastermind</li>
+                <li>The Great War</li>
+                <li>Bigger Than The Whole Sky</li>
+                <li>Paris</li>
+                <li>High Infidelity</li>
+                <li>Glitch</li>
+                <li>Would've Could've Should've</li>
+                <li>Dear Reader</li>
+                <li>Hits Different</li>
+            </ul>
+        </div>
     </main>
     <footer>
-        &#169; 2024 <a href="Contact.html">Contact Us</a>
+        &#169; 2024 <a href="../Contact.html">Contact Us</a>
     </footer>
+    <script src="../script/index.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6C1WY19YE');
+
+      startSlideshow('midnights');
+    </script>
 </body>
 </html>
