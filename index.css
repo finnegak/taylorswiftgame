@@ -81,19 +81,16 @@
     background-color: var(--color-ttpd);
 }
 
-/* Hover effect for all buttons */
 #album_buttons input:hover {
     transform: scale(1.05);
     filter: brightness(1.15);
 }
 
-/* Active state when clicking the button */
 #album_buttons input:active {
     transform: scale(0.95);
     filter: brightness(0.9);
 }
 
-/* Style for the Start button */
 .start-button {
     background-color: #4CAF50;
     color: white;
@@ -108,14 +105,12 @@
     text-align: center;
 }
 
-/* Hover effect for Start button */
 .start-button:hover {
     background-color: #45a049;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Active effect for Start button */
 .start-button:active {
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
