@@ -1,15 +1,3 @@
-// 1 - Debut / Taylor Swift 14
-// 2 - Fearless 26
-// 3 - Speak Now 2
-// 4 - Red 31
-// 5 - 1989 21
-// 6 - Reputation 15
-// 7 - Lover 19
-// 8 - Folklore 17
-// 9 - Evermore 17
-// 10 - Midnights 23
-// 11 - TTPD 32
-
 var done = new Array(numOfSongs); // 230
 var songs = {
     "Tim McGraw": "1",

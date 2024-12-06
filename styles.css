@@ -14,7 +14,7 @@
     --color-header-footer: #bfb39c;
     --color-bg: white;
     --color-nav: #F2DAAC;
-    --color-link-text: dimgrey; /* Link color */
+    --color-link-text: black;
 }
 
 * {
@@ -41,10 +41,10 @@ header {
 
 header .icon {
     width: 80px;
-    border-radius: 50%; /* Optional: Add if you want a circular icon */
+    border-radius: 50%;
 }
 
-header span { /* Assuming the text is inside a <span> or similar */
+header span {
     font-size: 2rem;
     text-align: center;
 }
@@ -55,7 +55,7 @@ h1 {
 
 nav {
     background-color: var(--color-nav);
-    margin: 0; /* Removes space between header and navigation */
+    margin: 0;
     padding: 10px 0;
     height: 55px;
 }
@@ -77,12 +77,12 @@ nav {
     text-decoration: none;
     font-size: 1.1rem;
     padding: 8px;
-    transition: all 0.3s ease; /* Smooth transition for color and transform */
+    transition: all 0.3s ease;
 }
 
 .list a:hover {
-    color: black; /* Change text color on hover */
-    border-radius: 5px; /* Adds a subtle roundness to the corners */
+    color: white;
+    border-radius: 5px;
     font-size: 20px;
 }
 
