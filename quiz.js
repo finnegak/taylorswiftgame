@@ -558,10 +558,14 @@ function reset(){
 function resetProgress(){
     done = new Array(numOfSongs);
     log = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-    setTable();
     total = 0;
     correctTotal = 0;
     div.innerHTML =" ";
+    document.getElementById('results').innerHTML = "";
+    document.getElementById('progress').innerHTML = "0 questions completed!";
+    document.getElementById('totalRight').innerHTML = correctTotal + "/230";
+    document.getElementById('totalPercentage').innerHTML = Math.round((correctTotal/numOfSongs)*100) + " %";
+    setTable();
 }
 
 function albumName(x){

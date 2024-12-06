@@ -14,9 +14,65 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-J6C1WY19YE');
 </script>
+<style>
+    /* General styles */
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1; /* Makes the main section grow to fill available space */
+        padding: 20px;
+        text-align: center;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6C1WY19YE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J6C1WY19YE');
+</script>
+</head>
 <body>
     <header>
         <img class="icon" src="thumbnails/thumbnail_main.png" alt="Taylor headshot"> Taylor Swift
@@ -39,7 +95,7 @@
         </ul>
     </nav>
     <main>
-        <h5>Contact us to provide feedback or let us know of an error.</h5>
+        <h2>Contact us to provide feedback or let us know of an error.</h2>
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
