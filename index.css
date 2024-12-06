@@ -11,8 +11,15 @@
 #results_column {
     width: 45%;
 }
+#results{
+    text-align:left;
+}
 #overall_results_column{
     width: 30%;
+}
+#overall-results tr th, #overall-results tr td {
+    width:50%;
+
 }
 #game_table {
     width: 100%;

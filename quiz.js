@@ -615,9 +615,6 @@ function setTable(){
     document.getElementById('midnightsW').innerHTML = log[19];
     document.getElementById('TTPDR').innerHTML = log[20];
     document.getElementById('TTPDW').innerHTML = log[21];
-    document.getElementById('totalRight').innerHTML = "0/230";
-    document.getElementById('totalPercentage').innerHTML = "0%"
-
 }
 
 function update(rand, x) {
