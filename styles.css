@@ -79,7 +79,7 @@ nav {
 }
 
 .list a:hover {
-    color: white; /* Change text color on hover */
+    color: black; /* Change text color on hover */
     border-radius: 5px; /* Adds a subtle roundness to the corners */
     transform: scale(1.1); /* Slightly enlarges the link */
 }
