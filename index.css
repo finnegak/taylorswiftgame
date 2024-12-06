@@ -4,15 +4,21 @@
     margin-bottom: 10px;
     width:100px;
 }
-#game_table tr td {
-    width:30%;
+#album_buttons {
+    width:25%;
+}
+
+#results_column {
+    width: 45%;
+}
+#overall_results_column{
+    width: 30%;
 }
 #game_table {
     width: 100%;
     table-layout: fixed;
 }
 #game_table td {
-    width: 33.33%; /* Ensures equal width for each column */
     text-align: center;
     padding: 10px;
     vertical-align: top;
@@ -21,6 +27,7 @@
     display: block;
     margin-bottom: 10px;
     width: 100%;
+    height: 45px;
     padding: 8px 12px;
     font-size: 1rem;
     color: white;

@@ -18,6 +18,17 @@
   gtag('js', new Date());
   gtag('config', 'G-J6C1WY19YE');
 </script>
+<style>
+.right{
+    color: green;
+}
+.wrong{
+    color:red;
+}
+.bold{
+    font-weight:bold;
+}
+</style>
 <body>
     <header><img class = "icon" src="thumbnails/thumbnail_main.png" alt="Taylor headshot">Taylor Swift</header>
     <nav>
@@ -38,49 +49,105 @@
         </ul>
     </nav>
     <main>
-        <!--Slideshow of Taylor Photos-->
-        <table>
-            <tr>
-                <td><img src="slideshow/ts1.jpeg" alt=""></td>
-                <td><img src="slideshow/ts2.jpeg" alt=""></td>
-                <td><img src="slideshow/ts3.jpeg" alt=""></td>
-                <td><img src="slideshow/ts4.jpeg" alt=""></td>
-                <td><img src="slideshow/ts5.jpeg" alt=""></td>
-                <td><img src="slideshow/ts6.jpeg" alt=""></td>
-                <td><img src="slideshow/ts7.jpeg" alt=""></td>
-                <td><img src="slideshow/ts8.jpeg" alt=""></td>
-            </tr>
-        </table>
         <!--Quiz Game-->
         <p>Look around to learn more about Taylor Swift and her 11 studio albums. Click start to quiz yourself.</p>
-        <input type="button" value="Start" class="start-button">
+        <input type="button" value="Start" class="start-button" onclick="Start()">
         <table id="game_table">
             <tr>
                 <td id="album_buttons">
-                    <h3> Song name...</h3>
-                    <input type="button" id="debut" value="Debut">
-                    <input type="button" id="fearless" value="Fearless">
-                    <input type="button" id="speak_now" value="Speak Now">
-                    <input type="button" id="red" value="Red">
-                    <input type="button" id="1989" value="1989">
-                    <input type="button" id="reputation" value="Reputation">
-                    <input type="button" id="lover" value="Lover">
-                    <input type="button" id="folklore" value="Folklore">
-                    <input type="button" id="evermore" value="Evermore">
-                    <input type="button" id="midnights" value="Midnights">
-                    <input type="button" id="ttpd" value="The Tourtered Poets Department">
+                    <h3 id="song"> Song name...</h3>
+                    <input type="button" id="debut" value="Debut" onclick="check(1)">
+                    <input type="button" id="fearless" value="Fearless" onclick="check(2)">
+                    <input type="button" id="speak_now" value="Speak Now" onclick="check(3)">
+                    <input type="button" id="red" value="Red" onclick="check(4)">
+                    <input type="button" id="1989" value="1989" onclick="check(5)">
+                    <input type="button" id="reputation" value="Reputation" onclick="check(6)">
+                    <input type="button" id="lover" value="Lover" onclick="check(7)">
+                    <input type="button" id="folklore" value="Folklore" onclick="check(8)">
+                    <input type="button" id="evermore" value="Evermore" onclick="check(9)">
+                    <input type="button" id="midnights" value="Midnights" onclick="check(10)">
+                    <input type="button" id="ttpd" value="The Tourtered Poets Department" onclick="check(11)">
                 </td>
-                <td>
-                    <h3>Results</h3>
+                <td id="results_column">
+                    <h3 class = "column-headings"> Results </h3> 
+                    <div id="results"></div>
                 </td>
-                <td>
-                    <h3>Overall Results</h3>
+                <td id="overall_results_column">
+                    <h3 class = "column-headings"> Overall Results </h3>
+                    <table>
+                        <tr>
+                            <th> Album Name</th>
+                            <th> Right </th>
+                            <th> Wrong </th>
+                        </tr>
+                        <tr>
+                            <td style = "color:#50a7e0;" > Debut </td>
+                            <td id="debutR"></td>
+                            <td id="debutW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:#D9A648;"> Fearless TV </td>
+                            <td id="fearlessR"></td>
+                            <td id="fearlessW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:#622773;"> Speak Now TV </td>
+                            <td id="speaknowR"></td>
+                            <td id="speaknowW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:#73030D;"> Red TV </td>
+                            <td id="redR"></td>
+                            <td id="redW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:#b0a19d;"> 1989 </td>
+                            <td id="x1989R"></td>
+                            <td id="x1989W"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:#676767;">Reputation</td>
+                            <td id="reputationR"></td>
+                            <td id="reputationW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color: var(--color-lover)">Lover</td>
+                            <td id="loverR"></td>
+                            <td id="loverW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:#bababa;">Folklore</td>
+                            <td id="folkloreR"></td>
+                            <td id="folkloreW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color: var(--color-evermore);">Evermore</td>
+                            <td id="evermoreR"></td>
+                            <td id="evermoreW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color: var(--color-midnights);">Midnights</td>
+                            <td id="midnightsR"></td>
+                            <td id="midnightsW"></td>
+                        </tr>
+                        <tr>
+                            <td style = "color:var(--color-ttpd)">The Tourtered Poets Department</td>
+                            <td id="TTPDR"></td>
+                            <td id="TTPDW"></td>
+                        </tr>
+                        <tr>
+                            <td id="totalRight"> 0/207 </td>
+                            <td id="totalPercentage"> 0 % </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
     </main>
     <footer>
+        <input type="button" value = "Reset Progress" onclick="resetProgress()"> <span id="progress">0 questions completed!</span>
         &#169; 2024 <a href="Contact.html">Contact Us</a>
     </footer>
+    <script src = "quiz.js"></script>
 </body>
 </html>
