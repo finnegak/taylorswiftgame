@@ -11,8 +11,8 @@
     --color-evermore: #67230e;
     --color-midnights: midnightblue;
     --color-ttpd: #844247;
-    --color-header-footer: #F2EDE4;
-    --color-bg: #FFFBF5;
+    --color-header-footer: #bfb39c;
+    --color-bg: white;
     --color-nav: #F2DAAC;
     --color-link-text: dimgrey; /* Link color */
 }
@@ -56,6 +56,7 @@ nav {
     background-color: var(--color-nav);
     margin: 0; /* Removes space between header and navigation */
     padding: 10px 0;
+    height: 55px;
 }
 
 
@@ -81,7 +82,7 @@ nav {
 .list a:hover {
     color: black; /* Change text color on hover */
     border-radius: 5px; /* Adds a subtle roundness to the corners */
-    transform: scale(1.1); /* Slightly enlarges the link */
+    font-size: 20px;
 }
 
 main {
@@ -108,12 +109,12 @@ footer {
     background-color: var(--color-header-footer);
     padding: 15px 0;
     text-align: center;
-    color: #666;
+    color: black;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: var(--color-link-text);
+    color: black;
     text-decoration: none;
 }
 
