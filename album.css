@@ -1,12 +1,4 @@
 /* album.css */
-:root {
-    /* Color Variables */
-    --color-header-footer: #F2EDE4;
-    --color-bg: #FFFBF5;
-    --color-nav: #F2DAAC;
-    --color-link-text: dimgrey;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
